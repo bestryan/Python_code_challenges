@@ -38,3 +38,16 @@ def double_index(lst, index):
 
 #Uncomment the line below when your function is done
 print(double_index([3, 8, -10, 12], 2))
+
+# 5. Middle Item
+#Write your function here
+def middle_element(lst):
+  if len(lst) % 2 == 0:
+   num1 = lst[int(len(lst)/2)]      # sum = lst[int(len(lst)/2)] + lst[int(len(lst)/2) - 1]
+   num2 = lst[int(len(lst)/2) - 1]  # return sum / 2 >>> shorter
+   return (num1 + num2)/2
+  else:
+   return lst[int(len(lst)/2)]
+
+#Uncomment the line below when your function is done
+print(middle_element([5, 2, -10, -4, 4, 5]))
