@@ -45,3 +45,34 @@ def odd_indices(lst):
   return new_list
 #Uncomment the line below when your function is done
 print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+#Exponents
+#Write your function here
+def exponents(bases, powers):
+  newlist = []
+  for a in bases:
+    for b in powers:
+      newlist.append(a**b)
+  return newlist
+
+#Uncomment the line below when your function is done
+print(exponents([2, 3, 4], [1, 2, 3]))
+
+#Larger Sum
+#Write your function here
+def larger_sum(lst1, lst2):
+  num1=0
+  num2=0
+  for number in lst1:
+    num1 = number + num1
+  for number in lst2:
+    num2 = number + num2
+  if num1 >= num2:
+    return lst1
+  else:
+    return lst2
+
+#Uncomment the line below when your function is done
+print(larger_sum([1, 9, 5], [2, 3, 7]))
+
+#
