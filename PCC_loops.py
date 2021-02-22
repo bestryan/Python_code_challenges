@@ -46,6 +46,7 @@ def odd_indices(lst):
 #Uncomment the line below when your function is done
 print(odd_indices([4, 3, 7, 10, 11, -2]))
 
+
 #Exponents
 #Write your function here
 def exponents(bases, powers):
@@ -57,6 +58,7 @@ def exponents(bases, powers):
 
 #Uncomment the line below when your function is done
 print(exponents([2, 3, 4], [1, 2, 3]))
+
 
 #Larger Sum
 #Write your function here
@@ -75,4 +77,56 @@ def larger_sum(lst1, lst2):
 #Uncomment the line below when your function is done
 print(larger_sum([1, 9, 5], [2, 3, 7]))
 
-#
+
+# Over 9000
+#Write your function here
+def over_nine_thousand(lst):
+  sum1=0
+  for number in lst:
+    sum1 = number + sum1
+    if sum1 >= 9000:
+      break
+  return sum1
+
+#Uncomment the line below when your function is done
+print(over_nine_thousand([8000, 900, 120, 5000]))
+
+
+# Max Num for loop
+#Write your function here
+def max_num(nums):
+  current_max = 0
+  for i in nums:
+    if i > current_max: 
+      current_max = i
+  return current_max
+  
+#Uncomment the line below when your function is done
+print(max_num([50, -10, 0, 75, 20, 90]))
+
+
+
+# Same Values
+# Write your function here
+def same_values(lst1, lst2):
+  newlist = []
+  for index in range(len(lst1)):
+    if lst1[index]==lst2[index]: 
+      newlist.append(index)
+  return newlist
+
+#Uncomment the line below when your function is done
+print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
+
+
+# Reversed List
+#Write your function here
+def reversed_list(lst1, lst2):
+  for index in range(len(lst1)):
+    if lst1[index] != lst2[len(lst2) - 1 - index]:
+      return False
+  return True
+
+#Uncomment the lines below when your function is done
+print(reversed_list([1, 2, 3], [3, 2, 1]))
+print(reversed_list([1, 5, 3], [3, 2, 1]))
